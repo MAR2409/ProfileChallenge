@@ -1,0 +1,192 @@
+//COLORS
+
+$DarkCyan: hsl(185, 75%, 39%);
+$DarkBlue: hsl(229, 23%, 23%);
+$DarkGrayish: hsl(227, 10%, 46%);
+$DarkGray: hsl(0, 0%, 59%);
+
+//GLOBAL
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+//CARD STYLING
+body {
+  background-color: $DarkCyan;
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: -750px -560px, 150px 300px;
+}
+
+.card-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .profile-card {
+    width: 375px;
+    height: 405px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    margin: 0.85rem;
+    .profile-background {
+      img {
+        width: 100%;
+      }
+    }
+
+    .profile {
+      height: 150px;
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: 5px solid white;
+        margin-top: -55px;
+      }
+
+      .text-content {
+        border-bottom: 1px solid $DarkGray;
+        height: 85px;
+        h1 {
+          font-weight: 700;
+          font-size: 20px;
+          margin-top: 1.2rem;
+        }
+
+        span {
+          font-weight: 400;
+          color: $DarkGrayish;
+          margin-left: 0.35rem;
+        }
+
+        h2 {
+          font-size: 16px;
+          font-weight: 400;
+          margin-top: 0.65rem;
+        }
+      }
+    }
+
+    .flex-followers {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      height: 120px;
+
+      p {
+        font-weight: 700;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 0.35rem;
+      }
+
+      span {
+        text-transform: capitalize;
+        color: $DarkGrayish;
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+//RESPONSIVE
+
+@media only screen and (min-width: 500px) and (max-width: 699px) {
+  body {
+    background-color: $DarkCyan;
+    background-image: url(./images/bg-pattern-top.svg),
+      url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -700px -560px, 200px 300px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 850px) {
+  body {
+    background-color: $DarkCyan;
+    background-image: url(./images/bg-pattern-top.svg),
+      url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -500px -560px, 300px 300px;
+  }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1030px) {
+  body {
+    background-color: $DarkCyan;
+    background-image: url(./images/bg-pattern-top.svg),
+      url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -500px -560px, 450px 300px;
+  }
+}
+
+@media only screen and (min-width: 1031px) and (max-width: 1120px) {
+  body {
+    background-color: $DarkCyan;
+    background-image: url(./images/bg-pattern-top.svg),
+      url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -300px -500px, 500px 300px;
+  }
+}
+
+@media only screen and (min-width: 1121px) and (max-width: 1300px) {
+  body {
+    background-color: $DarkCyan;
+    background-image: url(./images/bg-pattern-top.svg),
+      url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -300px -560px, 600px 300px;
+  }
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1500px) {
+  body {
+    background-color: $DarkCyan;
+    background-image: url(./images/bg-pattern-top.svg),
+      url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -300px -530px, 700px 300px;
+  }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 1599px) {
+  body {
+    background-color: $DarkCyan;
+    background-image: url(./images/bg-pattern-top.svg),
+      url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -200px -500px, 780px 350px;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1700px) {
+  body {
+    background-color: $DarkCyan;
+    background-image: url(./images/bg-pattern-top.svg),
+      url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -200px -500px, 840px 375px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  body {
+    background-color: $DarkCyan;
+    background-image: url(./images/bg-pattern-top.svg),
+      url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -85px -450px, 1000px 375px;
+  }
+}
